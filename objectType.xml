@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/objectType.xsd">
+	<import>
+		<!-- user bulk processing actions -->
+		<type>
+			<name>com.uz.tracker.track</name>
+			<definitionname>com.woltlab.wcf.bulkProcessing.user.action</definitionname>
+			<classname>wcf\system\bulk\processing\user\TrackerTrackBulkProcessingAction</classname>
+			<action>trackerTrack</action>
+			<permissions>mod.tracking.canModifyTracking</permissions>
+		</type>
+		<type>
+			<name>com.uz.tracker.update</name>
+			<definitionname>com.woltlab.wcf.bulkProcessing.user.action</definitionname>
+			<classname>wcf\system\bulk\processing\user\TrackerUpdateBulkProcessingAction</classname>
+			<action>trackerUpdate</action>
+			<permissions>mod.tracking.canModifyTracking</permissions>
+		</type>
+		<type>
+			<name>com.uz.tracker.delete</name>
+			<definitionname>com.woltlab.wcf.bulkProcessing.user.action</definitionname>
+			<classname>wcf\system\bulk\processing\user\TrackerDeleteBulkProcessingAction</classname>
+			<action>trackerDelete</action>
+			<permissions>mod.tracking.canModifyTracking</permissions>
+		</type>
+		<type>
+			<name>com.uz.tracker.export</name>
+			<definitionname>com.woltlab.wcf.bulkProcessing.user.action</definitionname>
+			<classname>wcf\system\bulk\processing\user\TrackerExportBulkProcessingAction</classname>
+			<action>trackerExport</action>
+			<permissions>mod.tracking.canModifyTracking</permissions>
+		</type>
+		<type>
+			<name>com.uz.tracker.log.delete</name>
+			<definitionname>com.woltlab.wcf.bulkProcessing.user.action</definitionname>
+			<classname>wcf\system\bulk\processing\user\TrackerLogDeleteBulkProcessingAction</classname>
+			<action>trackerLogDelete</action>
+			<permissions>mod.tracking.canModifyTracking</permissions>
+		</type>
+	</import>
+</data>

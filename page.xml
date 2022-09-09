@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/page.xsd">
+	<import>
+		<!-- dynamic -->
+		<page identifier="com.uz.tracker.wcf.TrackerList">
+			<pageType>system</pageType>
+			<controller>wcf\page\TrackerListPage</controller>
+			<handler>wcf\system\page\handler\TrackerListPageHandler</handler>
+			<name language="de">Tracker</name>
+			<name language="en">Tracker</name>
+			<permissions>mod.tracking.canSeeTracking</permissions>
+			<options>module_tracker</options>
+			
+			<content language="en">
+				<title>Tracker</title>
+			</content>
+			<content language="de">
+				<title>Tracker</title>
+			</content>
+		</page>
+		<page identifier="com.uz.tracker.wcf.TrackerLogList">
+			<pageType>system</pageType>
+			<controller>wcf\page\TrackerLogListPage</controller>
+			<handler>wcf\system\page\handler\TrackerLogListPageHandler</handler>
+			<name language="de">Tracker-Einträge</name>
+			<name language="en">Tracker Entries</name>
+			<hasFixedParent>1</hasFixedParent>
+			<parent>com.uz.tracker.wcf.TrackerList</parent>
+			<permissions>mod.tracking.canSeeTracking</permissions>
+			<options>module_tracker</options>
+			
+			<content language="en">
+				<title>Tracker Entries</title>
+			</content>
+			<content language="de">
+				<title>Tracker-Einträge</title>
+			</content>
+		</page>
+	</import>
+</data>

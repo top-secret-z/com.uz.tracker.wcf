@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/eventListener.xsd">
+	<import>
+		<!-- Page -->
+		<eventlistener name="trackerPage">
+			<eventclassname>wcf\page\AbstractPage</eventclassname>
+			<eventname>show</eventname>
+			<environment>user</environment>
+			<inherit>1</inherit>
+			<listenerclassname>wcf\system\event\listener\TrackerPageListener</listenerclassname>
+		</eventlistener>
+		
+		<!-- Article -->
+		<eventlistener name="trackerArticle">
+			<eventclassname>wcf\data\article\ArticleAction</eventclassname>
+			<eventname>finalizeAction</eventname>
+			<environment>user</environment>
+			<inherit>1</inherit>
+			<listenerclassname>wcf\system\event\listener\TrackerArticleListener</listenerclassname>
+		</eventlistener>
+		
+		<!-- Attachment -->
+		<eventlistener name="trackerAttachment">
+			<eventclassname>wcf\data\attachment\AttachmentAction</eventclassname>
+			<eventname>finalizeAction</eventname>
+			<environment>user</environment>
+			<inherit>1</inherit>
+			<listenerclassname>wcf\system\event\listener\TrackerAttachmentListener</listenerclassname>
+		</eventlistener>
+		
+		<!-- Comment -->
+		<eventlistener name="trackerComment">
+			<eventclassname>wcf\data\comment\CommentAction</eventclassname>
+			<eventname>finalizeAction</eventname>
+			<environment>user</environment>
+			<listenerclassname>wcf\system\event\listener\TrackerCommentListener</listenerclassname>
+		</eventlistener>
+		
+		<!-- Conversation -->
+		<eventlistener name="trackerConversation">
+			<eventclassname>wcf\data\conversation\ConversationAction</eventclassname>
+			<eventname>finalizeAction</eventname>
+			<listenerclassname>wcf\system\event\listener\TrackerConversationListener</listenerclassname>
+		</eventlistener>
+		<eventlistener name="trackerConversationMessage">
+			<eventclassname>wcf\data\conversation\message\ConversationMessageAction</eventclassname>
+			<eventname>finalizeAction</eventname>
+			<listenerclassname>wcf\system\event\listener\TrackerConversationListener</listenerclassname>
+		</eventlistener>
+		
+		<!-- Follow -->
+		<eventlistener name="trackerFollow">
+			<eventclassname>wcf\data\user\follow\UserFollowAction</eventclassname>
+			<eventname>finalizeAction</eventname>
+			<environment>user</environment>
+			<listenerclassname>wcf\system\event\listener\TrackerFollowListener</listenerclassname>
+		</eventlistener>
+		
+		<!-- Ignore -->
+		<eventlistener name="trackerIgnore">
+			<eventclassname>wcf\data\user\ignore\UserIgnoreAction</eventclassname>
+			<eventname>finalizeAction</eventname>
+			<environment>user</environment>
+			<listenerclassname>wcf\system\event\listener\TrackerIgnoreListener</listenerclassname>
+		</eventlistener>
+		
+		<!--  Infraction -->
+		<eventlistener name="trackerInfraction">
+			<eventclassname>wcf\data\user\infraction\warning\UserInfractionWarningAction</eventclassname>
+			<eventname>finalizeAction</eventname>
+			<environment>user</environment>
+			<listenerclassname>wcf\system\event\listener\TrackerInfractionListener</listenerclassname>
+		</eventlistener>
+		
+		<!-- Reaction -->
+		<eventlistener name="trackerReaction">
+			<eventclassname>wcf\data\reaction\ReactionAction</eventclassname>
+			<eventname>finalizeAction</eventname>
+			<environment>user</environment>
+			<inherit>0</inherit>
+			<listenerclassname>wcf\system\event\listener\TrackerReactionListener</listenerclassname>
+		</eventlistener>
+		
+		<!-- Poll create and vote -->
+		<eventlistener name="trackerPoll">
+			<eventclassname>wcf\data\poll\PollAction</eventclassname>
+			<eventname>finalizeAction</eventname>
+			<environment>user</environment>
+			<listenerclassname>wcf\system\event\listener\TrackerPollListener</listenerclassname>
+		</eventlistener>
+		
+		<!-- Report -->
+		<eventlistener name="trackerReport">
+			<eventclassname>wcf\data\moderation\queue\ModerationQueueReportAction</eventclassname>
+			<eventname>finalizeAction</eventname>
+			<environment>user</environment>
+			<listenerclassname>wcf\system\event\listener\TrackerReportListener</listenerclassname>
+		</eventlistener>
+		
+		<!-- Session -->
+		<eventlistener name="trackerSession">
+			<eventclassname>wcf\system\session\SessionHandler</eventclassname>
+			<eventname>afterChangeUser</eventname>
+			<listenerclassname>wcf\system\event\listener\TrackerLoginListener</listenerclassname>
+		</eventlistener>
+		
+		
+		<!-- Tagging -->
+		<eventlistener name="trackerTagging">
+			<eventclassname>wcf\data\tag\TagAction</eventclassname>
+			<eventname>finalizeAction</eventname>
+			<environment>user</environment>
+			<listenerclassname>wcf\system\event\listener\TrackerTagListener</listenerclassname>
+		</eventlistener>
+		
+		<!-- User profile / account -->
+		<eventlistener name="trackerUser">
+			<eventclassname>wcf\data\user\UserAction</eventclassname>
+			<eventname>finalizeAction</eventname>
+			<environment>user</environment>
+			<listenerclassname>wcf\system\event\listener\TrackerUserListener</listenerclassname>
+		</eventlistener>
+		
+		<!-- GDPR -->
+		<eventlistener name="trackerGdprExport">
+			<eventclassname>wcf\acp\action\UserExportGdprAction</eventclassname>
+			<eventname>export</eventname>
+			<listenerclassname>wcf\system\event\listener\UzTrackerGdprExportListener</listenerclassname>
+			<environment>admin</environment>
+		</eventlistener>
+		
+		<!-- User rename -->
+		<eventlistener name="trackerUserRenameUser">
+			<eventclassname>wcf\data\user\UserAction</eventclassname>
+			<eventname>rename</eventname>
+			<listenerclassname>wcf\system\event\listener\TrackerUserActionRenameListener</listenerclassname>
+			<environment>user</environment>
+		</eventlistener>
+		<eventlistener name="trackerUserRenameAdmin">
+			<eventclassname>wcf\data\user\UserAction</eventclassname>
+			<eventname>rename</eventname>
+			<listenerclassname>wcf\system\event\listener\TrackerUserActionRenameListener</listenerclassname>
+			<environment>admin</environment>
+		</eventlistener>
+	</import>
+	
+	<delete>
+		<!-- Like -->
+		<eventlistener name="trackerLike">
+			<environment>user</environment>
+			<eventclassname>wcf\data\like\LikeAction</eventclassname>
+			<eventname>finalizeAction</eventname>
+			<inherit>0</inherit>
+			<listenerclassname>wcf\system\event\listener\TrackerLikeListener</listenerclassname>
+		</eventlistener>
+	</delete>
+</data>
