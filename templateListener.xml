@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/templateListener.xsd">
-	<import>
-		<!-- tracker button -->
-		<templatelistener name="userTrackerButton">
-			<environment>user</environment>
-			<templatename>user</templatename>
-			<eventname>contentHeaderNavigation</eventname>
-			<templatecode><![CDATA[{include file='__trackerUserButton'}]]></templatecode>
-		</templatelistener>
-		
-		<!-- tracker button JS -->
-		<templatelistener name="trackerJavascriptInclude">
-			<environment>user</environment>
-			<templatename>user</templatename>
-			<eventname>javascriptInclude</eventname>
-			<templatecode><![CDATA[{include file='__trackerUserJavascriptInclude'}]]></templatecode>
-		</templatelistener>
-	</import>
+    <import>
+        <!-- tracker button -->
+        <templatelistener name="userTrackerButton">
+            <environment>user</environment>
+            <templatename>user</templatename>
+            <eventname>contentHeaderNavigation</eventname>
+            <templatecode><![CDATA[{include file='__trackerUserButton'}]]></templatecode>
+        </templatelistener>
+
+        <!-- tracker button JS -->
+        <templatelistener name="trackerJavascriptInclude">
+            <environment>user</environment>
+            <templatename>user</templatename>
+            <eventname>javascriptInclude</eventname>
+            <templatecode><![CDATA[{include file='__trackerUserJavascriptInclude'}]]></templatecode>
+        </templatelistener>
+    </import>
 </data>

@@ -1,6 +1,6 @@
 @media only screen and (max-width: 600px) {
-	.trackerLogList thead .columnTime, .trackerLogList tbody .columnTime, .trackerLogList thead .columnDescription, .trackerLogList tbody .columnDescription, .trackerLogList thead .columnLink, .trackerLogList tbody .columnLink {display: none;}
+    .trackerLogList thead .columnTime, .trackerLogList tbody .columnTime, .trackerLogList thead .columnDescription, .trackerLogList tbody .columnDescription, .trackerLogList thead .columnLink, .trackerLogList tbody .columnLink {display: none;}
 }
 @media only screen and (max-width: 800px) {
-	.trackerLogList thead .columnDescription, .trackerLogList tbody .columnDescription, .trackerLogList thead .columnLink, .trackerLogList tbody .columnLink {display: none;}
+    .trackerLogList thead .columnDescription, .trackerLogList tbody .columnDescription, .trackerLogList thead .columnLink, .trackerLogList tbody .columnLink {display: none;}
 }
