@@ -1,79 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/option.xsd">
-	<import>
-		<categories>
-			<category name="user.tracker">
-				<parent>user</parent>
-			</category>
-			<category name="user.tracker.online">
-				<parent>user.tracker</parent>
-				<showorder>1</showorder>
-			</category>
-			<category name="user.tracker.list">
-				<parent>user.tracker</parent>
-				<showorder>2</showorder>
-			</category>
-			<category name="user.tracker.auto">
-				<parent>user.tracker</parent>
-				<showorder>3</showorder>
-			</category>
-			<category name="user.tracker.cleanup">
-				<parent>user.tracker</parent>
-				<showorder>4</showorder>
-			</category>
-			<category name="user.tracker.ipWhois">
-				<parent>user.tracker</parent>
-				<showorder>5</showorder>
-			</category>
-			<category name="user.tracker.exclude">
-				<parent>user.tracker</parent>
-				<showorder>6</showorder>
-			</category>
-		</categories>
-		
-		<options>
-			<option name="module_tracker">
-				<categoryname>module.user</categoryname>
-				<optiontype>boolean</optiontype>
-				<defaultvalue>1</defaultvalue>
-			</option>
-			
-			<option name="user_tracker_online_hide">
-				<categoryname>user.tracker.online</categoryname>
-				<optiontype>boolean</optiontype>
-				<defaultvalue>0</defaultvalue>
-			</option>
-			
-			<option name="user_tracker_logList_per_page">
-				<categoryname>user.tracker.list</categoryname>
-				<optiontype>integer</optiontype>
-				<defaultvalue>15</defaultvalue>
-				<minvalue>5</minvalue>
-			</option>
-			<option name="user_tracker_auto_newUser_days">
-				<categoryname>user.tracker.auto</categoryname>
-				<optiontype>integer</optiontype>
-				<defaultvalue>14</defaultvalue>
-				<minvalue>0</minvalue>
-				<suffix>days</suffix>
-			</option>
-			<option name="user_tracker_cleanup_days">
-				<categoryname>user.tracker.cleanup</categoryname>
-				<optiontype>integer</optiontype>
-				<defaultvalue>60</defaultvalue>
-				<minvalue>0</minvalue>
-				<suffix>days</suffix>
-			</option>
-			<option name="user_tracker_whois_url">
-				<categoryname>user.tracker.ipWhois</categoryname>
-				<optiontype>text</optiontype>
-				<defaultvalue><![CDATA[https://apps.db.ripe.net/search/query.html?searchtext=%s]]></defaultvalue>
-			</option>
-			<option name="user_tracker_exclude_media">
-				<categoryname>user.tracker.exclude</categoryname>
-				<optiontype>boolean</optiontype>
-				<defaultvalue>0</defaultvalue>
-			</option>
-		</options>
-	</import>
+    <import>
+        <categories>
+            <category name="user.tracker">
+                <parent>user</parent>
+            </category>
+            <category name="user.tracker.online">
+                <parent>user.tracker</parent>
+                <showorder>1</showorder>
+            </category>
+            <category name="user.tracker.list">
+                <parent>user.tracker</parent>
+                <showorder>2</showorder>
+            </category>
+            <category name="user.tracker.auto">
+                <parent>user.tracker</parent>
+                <showorder>3</showorder>
+            </category>
+            <category name="user.tracker.cleanup">
+                <parent>user.tracker</parent>
+                <showorder>4</showorder>
+            </category>
+            <category name="user.tracker.ipWhois">
+                <parent>user.tracker</parent>
+                <showorder>5</showorder>
+            </category>
+            <category name="user.tracker.exclude">
+                <parent>user.tracker</parent>
+                <showorder>6</showorder>
+            </category>
+        </categories>
+
+        <options>
+            <option name="module_tracker">
+                <categoryname>module.user</categoryname>
+                <optiontype>boolean</optiontype>
+                <defaultvalue>1</defaultvalue>
+            </option>
+
+            <option name="user_tracker_online_hide">
+                <categoryname>user.tracker.online</categoryname>
+                <optiontype>boolean</optiontype>
+                <defaultvalue>0</defaultvalue>
+            </option>
+
+            <option name="user_tracker_logList_per_page">
+                <categoryname>user.tracker.list</categoryname>
+                <optiontype>integer</optiontype>
+                <defaultvalue>15</defaultvalue>
+                <minvalue>5</minvalue>
+            </option>
+            <option name="user_tracker_auto_newUser_days">
+                <categoryname>user.tracker.auto</categoryname>
+                <optiontype>integer</optiontype>
+                <defaultvalue>14</defaultvalue>
+                <minvalue>0</minvalue>
+                <suffix>days</suffix>
+            </option>
+            <option name="user_tracker_cleanup_days">
+                <categoryname>user.tracker.cleanup</categoryname>
+                <optiontype>integer</optiontype>
+                <defaultvalue>60</defaultvalue>
+                <minvalue>0</minvalue>
+                <suffix>days</suffix>
+            </option>
+            <option name="user_tracker_whois_url">
+                <categoryname>user.tracker.ipWhois</categoryname>
+                <optiontype>text</optiontype>
+                <defaultvalue><![CDATA[https://apps.db.ripe.net/search/query.html?searchtext=%s]]></defaultvalue>
+            </option>
+            <option name="user_tracker_exclude_media">
+                <categoryname>user.tracker.exclude</categoryname>
+                <optiontype>boolean</optiontype>
+                <defaultvalue>0</defaultvalue>
+            </option>
+        </options>
+    </import>
 </data>
